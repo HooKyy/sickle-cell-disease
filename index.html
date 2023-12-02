@@ -13,15 +13,22 @@
           <img class="headerIcon" src="assets/logo.png" alt="header icon" />
         </div>
         <nav>
-          <a href="index.html">About</a>
-          <a href="price.html">Contact</a>
-          <a href="about.html">More</a>
+          <a class="navbar" href="#info">About</a>
+          <a class="navbar" href="price.html">Contact</a>
+          <div class="dropdown">
+            <a class="navbar" href="#pages">More</a>
+            <div class="dropdown-content">
+              <a class="navbar" href="about.html">Homeostasis</a>
+              <a class="navbar" href="about.html">Biotechnology</a>
+              <a class="navbar" href="about.html">Gene Therapy</a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
     <main>
       <section class="about">
-        <section id="slider" class="section-slider">
+        <section class="section-slider">
           <div class="image-slider">
             <div class="slide active">
               <img src="assets/1.png" alt=" " />
@@ -39,7 +46,7 @@
             </div>
           </div>
         </section>
-        <section class="info">
+        <section id="info" class="info">
           <h1 class="info-title">About Sickle Cell Disease</h1>
           <p class="info-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
@@ -59,8 +66,49 @@
           <img class="info-img" src="assets/aboutImg.png" alt="inherited" />
         </section>
       </section>
+      <section class="section-slider1">
+        <div class="image-slider1">
+          <div class="slide1 active1">
+            <img src="assets/data1.png" alt=" " />
+          </div>
+
+          <div class="slide1">
+            <img src="assets/data2.png" alt=" " />
+          </div>
+
+          <div class="slide1">
+            <img src="assets/data3.png" alt=" " />
+          </div>
+        </div>
+      </section>
+      <section id="pages" class="pages">
+        <div class="page-container">
+          <div class="page reveal">
+            <a class="page-a" href="homeostasis.html">
+              <img class="page-img" src="assets/page1.png" alt="homeostasis" />
+            </a>
+          </div>
+          <div class="page reveal">
+            <a href="biotechnology.html">
+              <img
+                class="page-img"
+                src="assets/page2.png"
+                alt="biotechnology"
+              />
+            </a>
+          </div>
+          <div class="page reveal">
+            <a href="geneTherapy.html">
+              <div class="img-overlay"></div>
+              <img class="page-img" src="assets/page3.png" alt="geneTherapy" />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <h1 class="footer-info">FOOTER</h1>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
