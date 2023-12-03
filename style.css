@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  background-color: antiquewhite;
 }
 main {
   margin: 0px;
@@ -85,6 +86,7 @@ nav {
   text-align: left;
   font-size: 50px;
   margin: 10px 0px;
+  font-family: cursive;
 }
 .info-text {
   font-size: 25px;
@@ -129,38 +131,64 @@ nav {
   transition-property: clip-path;
 }
 .pages {
-  height: 600px;
+  height: 650px;
   background-color: antiquewhite;
+  padding: 20px;
 }
 .page-container {
   display: flex;
   justify-content: space-around;
   background-color: antiquewhite;
+  margin-top: 50px;
 }
 .page {
   width: 300px;
   height: 460px;
-  margin: 80px;
+  margin: 0px;
 }
 .page-img {
   border-radius: 20px;
 }
-.img-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(169, 169, 169, 0.8);
-  border-radius: 8px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+.page:hover {
+  scale: 1.05;
 }
-.page-container:hover .img-overlay {
-  opacity: 1;
+.page-img:hover {
+  box-shadow: 0px 0px 20px rgb(167, 146, 120);
 }
-.page-container:hover .page-img {
-  transform: scale(1.1); /* Adjust the scale factor as needed */
+.title-text {
+  text-align: center;
+  font-size: 200%;
+  font-family: cursive;
+  font-weight: bolder;
+}
+.quotes {
+  height: 230px;
+  background-color: rgb(245, 142, 104);
+  padding: 20px;
+}
+.quote-container {
+  margin: 30px;
+}
+.title-info {
+  text-align: center;
+}
+span {
+  color: orangered;
+}
+.source-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.source-container iframe {
+  flex: 1; /* Each iframe takes equal width within the flex container */
+  min-width: 40%;
+  max-width: 40%; /* Adjust the max-width based on the gap */
+  box-sizing: border-box;
+  height: 300px;
+}
+iframe {
+  margin: 20px 40px;
 }
 .reveal {
   transform: translateY(150px);
@@ -172,9 +200,8 @@ nav {
   opacity: 1;
 }
 footer {
-  height: 300px;
   background-color: rgb(90, 81, 70);
-  margin: 0px;
+  padding: 50px;
 }
 .footer-info {
   color: white;
@@ -210,4 +237,39 @@ footer {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+#survey-box {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="radio"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
 }

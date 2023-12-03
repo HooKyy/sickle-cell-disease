@@ -74,3 +74,39 @@ function reveal() {
     }
   });
 }
+
+//changing quotes
+document.addEventListener("DOMContentLoaded", function () {
+  // Array of text values to cycle through
+  const textArray1 = [
+    '"At bottom every man knows well enough that he is a unique being, only once on this earth; and by no extraordinary chance will such a marvelously picturesque piece of diversity in unity as he is, ever be put together a second time."',
+    '"We are survival machines - robot vehicles blindly programmed to preserve the selfish molecules known as genes. This is a truth which still fills me with astonishment."',
+    '"You genetics load the gun, your lifestyle pulls the trigger."',
+    '"Genetic engineering is a result of science advancement, so I don nott think that in itself is bad. If used wisely, genetics can be beneficial, but they can be abused, too."',
+    '"I suspect any worries about genetic engineering may be unnecessary. Genetic mutations have always happened naturally, anyway."',
+  ];
+  const textArray2 = [
+    "―Friedrich Nietzsche",
+    "―Richard Dawkins",
+    "―Mehmet Oz",
+    "―Hideo Kojima",
+    "―James Lovelock",
+  ];
+
+  // Get h1
+  const changingText = document.getElementById("changingText");
+  const changingText1 = document.getElementById("changingText1");
+
+  // Function to change text at intervals
+  function changeText() {
+    let currentIndex = 0;
+
+    setInterval(() => {
+      changingText.textContent = textArray1[currentIndex];
+      changingText1.textContent = textArray2[currentIndex];
+      currentIndex = (currentIndex + 1) % textArray1.length;
+    }, 10000);
+  }
+
+  changeText();
+});
