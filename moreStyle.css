@@ -1,0 +1,244 @@
+body {
+  margin: 0px;
+}
+header {
+  background-color: #f48c24;
+  padding-left: 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+  z-index: 1;
+  border-bottom: black solid;
+  transition: top 0.3s ease-in-out;
+}
+.headerIcon {
+  width: 400px;
+  margin: 0px;
+  position: absolute;
+}
+.navbar {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  margin: 5px 10px 0px 10px;
+  float: left;
+  background-color: #f9be84;
+  border-radius: 20%;
+}
+.navbar:hover {
+  background-color: #f6c89a;
+}
+nav {
+  position: absolute;
+  right: 15px;
+  display: flex;
+  flex-direction: row;
+}
+section {
+  margin: 0px;
+}
+.hidden {
+  top: -100px;
+}
+.hidden1 {
+  opacity: 0;
+}
+.about {
+  height: 650px;
+  z-index: -1;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+.about-text {
+  text-align: center;
+  font-size: 380%;
+  font-family: cursive;
+  color: black;
+  margin: 50px;
+  padding: 20px;
+  background-color: rgba(184, 184, 184, 0.6);
+  border-radius: 80px;
+}
+.background-image1 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/background-img1.jpg); /* Replace 'your-image.jpg' with your image file path */
+  background-size: cover;
+  filter: blur(10px); /* Adjust the blur intensity as needed */
+  z-index: -1;
+  margin-bottom: 5px;
+}
+.background-image2 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/background-img2.jpeg); /* Replace 'your-image.jpg' with your image file path */
+  background-size: cover;
+  filter: blur(10px); /* Adjust the blur intensity as needed */
+  z-index: -1;
+  margin-bottom: 5px;
+}
+.background-image3 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/background-img3.avif); /* Replace 'your-image.jpg' with your image file path */
+  background-size: cover;
+  filter: blur(10px); /* Adjust the blur intensity as needed */
+  z-index: -1;
+  margin-bottom: 5px;
+}
+.content {
+  text-align: center;
+  color: white;
+}
+.visual {
+  height: 700px;
+  background-color: rgb(125, 252, 111);
+  padding: 1%;
+}
+.visual1 {
+  height: 700px;
+  background-color: rgb(111, 240, 252);
+  padding: 1%;
+}
+.visual-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.visual-container img {
+  border-radius: 20px;
+  display: block;
+}
+.reveal1 {
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 2s;
+}
+.reveal2 {
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all 2s;
+}
+.visual-text1 {
+  position: absolute;
+  top: 13%;
+  left: 2%;
+  max-width: 50%;
+  background-color: rgba(
+    28,
+    69,
+    24,
+    0.8
+  ); /* Adjust the background color and opacity */
+  padding: 2%;
+  text-align: left;
+  color: #fff; /* Adjust the text color */
+  border-radius: 5%;
+}
+.visual-text2 {
+  position: absolute;
+  top: 13%;
+  right: 2%;
+  max-width: 50%;
+  background-color: rgba(
+    28,
+    69,
+    24,
+    0.8
+  ); /* Adjust the background color and opacity */
+  padding: 2%;
+  text-align: right;
+  color: #fff; /* Adjust the text color */
+  border-radius: 5%;
+}
+span {
+  font-weight: bolder;
+}
+.visual-item {
+  position: relative;
+  width: auto;
+  max-width: 1440px; /* Adjust the max-width as needed */
+}
+.active2 {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.scd-impact-info {
+  background-color: rosybrown;
+  top: 0;
+  padding: 2%;
+}
+.scd-impact {
+  background-color: rgb(160, 97, 97);
+  top: 0;
+  padding: 2% 5% 5% 5%;
+}
+.info-text {
+  text-align: center;
+  font-size: 250%;
+  color: whitesmoke;
+}
+.visual-text3 {
+  position: absolute;
+  top: 13%;
+  left: 2%;
+  max-width: 50%;
+  background-color: rgba(
+    69,
+    24,
+    24,
+    0.8
+  ); /* Adjust the background color and opacity */
+  padding: 2%;
+  text-align: left;
+  color: #fff; /* Adjust the text color */
+  border-radius: 5%;
+}
+.visual-text4 {
+  position: absolute;
+  top: 13%;
+  right: 2%;
+  max-width: 50%;
+  background-color: rgba(
+    69,
+    24,
+    24,
+    0.8
+  ); /* Adjust the background color and opacity */
+  padding: 2%;
+  text-align: right;
+  color: #fff; /* Adjust the text color */
+  border-radius: 5%;
+}
+.title-text {
+  text-align: center;
+  font-size: 200%;
+  font-family: cursive;
+  font-weight: bolder;
+}
+.source {
+  height: 600px;
+  background-color: rgb(45, 108, 24);
+}
