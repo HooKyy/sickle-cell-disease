@@ -10,7 +10,9 @@
     <header>
       <div class="main-header">
         <div>
-          <img class="headerIcon" src="assets/logo.png" alt="header icon" />
+          <a href="index.html"
+            ><img class="headerIcon" src="assets/logo.png" alt="header icon"
+          /></a>
         </div>
         <nav>
           <a class="navbar" href="#info">About</a>
@@ -18,15 +20,10 @@
           <div class="dropdown">
             <a class="navbar" href="#pages">More</a>
             <div class="dropdown-content">
-              <a class="navbar" href="homeostasis.html" target="_blank"
-                >Homeostasis</a
-              >
-              <a class="navbar" href="biotechnology.html" target="_blank"
-                >Biotechnology</a
-              >
-              <a class="navbar" href="geneTherapy.html" target="_blank"
-                >Gene Therapy</a
-              >
+              <a class="navbar" href="homeostasis.html">Homeostasis</a>
+              <a class="navbar" href="biotechnology.html">Biotechnology</a>
+              <a class="navbar" href="geneTherapy.html">Gene Therapy</a>
+              <a class="navbar" href="story.html">A Fiction Story</a>
             </div>
           </div>
         </nav>
@@ -55,10 +52,11 @@
         <section id="info" class="info">
           <h1 class="info-title">Sickle Cell Disease</h1>
           <p class="info-text">
-            Sickle cell disease (SCD) is a genetic disorder characterized by the
-            presence of abnormal hemoglobin, known as hemoglobin S, in red blood
-            cells. This hereditary condition primarily affects individuals of
-            African, Middle Eastern, Mediterranean, and South Asian descent.
+            Sickle cell disease (SCD) is a recesive genetic disorder
+            characterized by the presence of abnormal hemoglobin, known as
+            hemoglobin S, in red blood cells. This hereditary condition
+            primarily affects individuals of African, Middle Eastern,
+            Mediterranean, and South Asian descent and it is not contagious.
           </p>
           <p class="info-text">
             These misshapen cells can block blood vessels, leading to episodes
@@ -88,12 +86,12 @@
         <h1 class="title-text">CLICK ONE TO <span>LEARN MORE!</span></h1>
         <div class="page-container">
           <div class="page reveal">
-            <a href="homeostasis.html" target="_blank">
+            <a href="homeostasis.html">
               <img class="page-img" src="assets/page1.png" alt="homeostasis" />
             </a>
           </div>
           <div class="page reveal">
-            <a href="biotechnology.html" target="_blank">
+            <a href="biotechnology.html">
               <img
                 class="page-img"
                 src="assets/page2.png"
@@ -102,7 +100,7 @@
             </a>
           </div>
           <div class="page reveal">
-            <a href="geneTherapy.html" target="_blank">
+            <a href="geneTherapy.html">
               <div class="img-overlay"></div>
               <img class="page-img" src="assets/page3.png" alt="geneTherapy" />
             </a>
@@ -122,6 +120,7 @@
         <h1 class="title-text">MORE SOURCES!</h1>
         <div class="source-container">
           <iframe
+            class="reveal1"
             src="https://www.cdc.gov/ncbddd/sicklecell/facts.html"
             width="50%"
             height="300px"
@@ -129,6 +128,7 @@
             style="border: 0"
           ></iframe>
           <iframe
+            class="reveal2"
             src="https://www.iomcworld.org/open-access/measuring-the-percentage-of-consanguinity-in-sickle-cell-patients-and-its-effect-on-the-prognosis-of-the-disease-46853.html"
             width="50%"
             height="300px"
@@ -137,6 +137,7 @@
           ></iframe>
           <br />
           <iframe
+            class="reveal1"
             width="50%"
             height="300"
             src="https://www.youtube.com/embed/mky_YWAp4UA?si=XLxJ5y0YjwSjJ1w4"
@@ -145,6 +146,7 @@
             allowfullscreen
           ></iframe>
           <iframe
+            class="reveal2"
             width="50%"
             height="300"
             src="https://www.youtube.com/embed/YGSjJHnCsAY?si=hGxVIw98Edw9KqML"
@@ -160,6 +162,7 @@
         <h2 class="title-text">Survey Box</h2>
         <form
           action="https://formsubmit.co/ravi.jagadhiswara6@gmail.com"
+          target="_blank"
           method="POST"
         >
           <label for="question">Question:</label>
@@ -168,7 +171,7 @@
           <label for="feedback">Feedback:</label>
           <textarea id="feedback" name="feedback" rows="4"></textarea>
 
-          <label for="like">What Do You Like?:</label>
+          <label for="like">Which Part Did You Like Most?:</label>
           <textarea id="like" name="like" rows="4" required></textarea>
 
           <label for="rating">Rating:</label>

@@ -61,8 +61,36 @@ window.addEventListener("scroll", reveal);
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
+  var reveals1 = document.querySelectorAll(".reveal1");
+  var reveals2 = document.querySelectorAll(".reveal2");
 
+  //reveal up
   reveals.forEach((reveal) => {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveal.getBoundingClientRect().top;
+    var revealPoint = 20;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveal.classList.add("active2");
+    } else {
+      reveal.classList.remove("active2");
+    }
+  });
+  //reveal from left
+  reveals1.forEach((reveal) => {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveal.getBoundingClientRect().top;
+    var revealPoint = 20;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveal.classList.add("active2");
+    } else {
+      reveal.classList.remove("active2");
+    }
+  });
+
+  //reveal from right
+  reveals2.forEach((reveal) => {
     var windowHeight = window.innerHeight;
     var revealTop = reveal.getBoundingClientRect().top;
     var revealPoint = 20;

@@ -2,9 +2,6 @@ body {
   margin: 0px;
   background-color: antiquewhite;
 }
-main {
-  margin: 0px;
-}
 header {
   background-color: #f48c24;
 }
@@ -192,6 +189,16 @@ iframe {
 }
 .reveal {
   transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s;
+}
+.reveal1 {
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 2s;
+}
+.reveal2 {
+  transform: translateX(150px);
   opacity: 0;
   transition: all 2s;
 }
