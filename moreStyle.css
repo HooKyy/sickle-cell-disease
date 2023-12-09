@@ -1,5 +1,6 @@
 body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 header {
   background-color: #f48c24;
@@ -112,12 +113,12 @@ section {
   color: white;
 }
 .visual {
-  height: 700px;
+  height: auto;
   background-color: rgb(125, 252, 111);
   padding: 1%;
 }
 .visual1 {
-  height: 700px;
+  height: auto;
   background-color: rgb(111, 240, 252);
   padding: 1%;
 }
@@ -147,9 +148,9 @@ section {
   left: 2%;
   max-width: 50%;
   background-color: rgba(
-    28,
-    69,
-    24,
+    65,
+    65,
+    65,
     0.8
   ); /* Adjust the background color and opacity */
   padding: 2%;
@@ -163,9 +164,9 @@ section {
   right: 2%;
   max-width: 50%;
   background-color: rgba(
-    28,
-    69,
-    24,
+    65,
+    65,
+    65,
     0.8
   ); /* Adjust the background color and opacity */
   padding: 2%;
@@ -190,6 +191,11 @@ span {
   top: 0;
   padding: 2%;
 }
+.scd-impact-info1 {
+  background-color: rgb(143, 162, 188);
+  top: 0;
+  padding: 2%;
+}
 .scd-impact {
   background-color: rgb(160, 97, 97);
   top: 0;
@@ -199,38 +205,6 @@ span {
   text-align: center;
   font-size: 250%;
   color: whitesmoke;
-}
-.visual-text3 {
-  position: absolute;
-  top: 13%;
-  left: 2%;
-  max-width: 50%;
-  background-color: rgba(
-    69,
-    24,
-    24,
-    0.8
-  ); /* Adjust the background color and opacity */
-  padding: 2%;
-  text-align: left;
-  color: #fff; /* Adjust the text color */
-  border-radius: 5%;
-}
-.visual-text4 {
-  position: absolute;
-  top: 13%;
-  right: 2%;
-  max-width: 50%;
-  background-color: rgba(
-    69,
-    24,
-    24,
-    0.8
-  ); /* Adjust the background color and opacity */
-  padding: 2%;
-  text-align: right;
-  color: #fff; /* Adjust the text color */
-  border-radius: 5%;
 }
 .title-text {
   text-align: center;
