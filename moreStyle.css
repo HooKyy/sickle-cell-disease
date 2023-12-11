@@ -122,6 +122,11 @@ section {
   background-color: rgb(111, 240, 252);
   padding: 1%;
 }
+.visual2 {
+  height: auto;
+  background-color: rgb(252, 240, 111);
+  padding: 1%;
+}
 .visual-container {
   display: flex;
   justify-content: space-around;
@@ -201,6 +206,11 @@ span {
   top: 0;
   padding: 2% 5% 5% 5%;
 }
+.scd-impact1 {
+  background-color: rgb(160, 145, 97);
+  top: 0;
+  padding: 2% 5% 5% 5%;
+}
 .info-text {
   text-align: center;
   font-size: 250%;
@@ -212,7 +222,85 @@ span {
   font-family: cursive;
   font-weight: bolder;
 }
-.source {
-  height: 600px;
-  background-color: rgb(45, 108, 24);
+.sources {
+  background-color: rgb(255, 204, 0);
+  top: 0;
+  padding: 2% 5% 5% 5%;
+}
+.source-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.source-container iframe {
+  flex: 1; /* Each iframe takes equal width within the flex container */
+  min-width: 40%;
+  max-width: 40%; /* Adjust the max-width based on the gap */
+  box-sizing: border-box;
+  height: 300px;
+}
+iframe {
+  margin: 20px 40px;
+}
+.modal {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f48c24;
+  z-index: 999;
+}
+
+body {
+  overflow: hidden;
+}
+.image-container {
+  left: 20%;
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+}
+
+/* Image to be animated */
+.animated-image {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: auto;
+  height: 100%;
+  animation: rotateAndMove 1.5s linear infinite;
+}
+
+/* Keyframes for the animation */
+@keyframes rotateAndMove {
+  0% {
+    transform: translate(0, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(80%, -50%) rotate(360deg);
+  }
+  50% {
+    transform: translate(200%, -50%) rotate(720deg);
+  }
+  75% {
+    transform: translate(300%, -50%) rotate(1080deg);
+  }
+  100% {
+    transform: translate(400%, -50%) rotate(1440deg);
+    opacity: 0.3; /* Fade out at the end */
+  }
 }

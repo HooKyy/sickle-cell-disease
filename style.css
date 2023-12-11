@@ -159,7 +159,7 @@ nav {
   font-weight: bolder;
 }
 .quotes {
-  height: 230px;
+  height: auto;
   background-color: rgb(245, 142, 104);
   padding: 20px;
 }
@@ -279,4 +279,66 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+.modal {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f48c24;
+  z-index: 999;
+}
+
+body {
+  overflow: hidden;
+}
+.image-container {
+  left: 20%;
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+}
+
+/* Image to be animated */
+.animated-image {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: auto;
+  height: 100%;
+  animation: rotateAndMove 1.5s linear infinite;
+}
+
+/* Keyframes for the animation */
+@keyframes rotateAndMove {
+  0% {
+    transform: translate(0, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(80%, -50%) rotate(360deg);
+  }
+  50% {
+    transform: translate(200%, -50%) rotate(720deg);
+  }
+  75% {
+    transform: translate(300%, -50%) rotate(1080deg);
+  }
+  100% {
+    transform: translate(400%, -50%) rotate(1440deg);
+    opacity: 0.3; /* Fade out at the end */
+  }
 }
