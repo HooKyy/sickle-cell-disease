@@ -48,3 +48,41 @@ function reveal() {
     }
   });
 }
+
+// Function to open the modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}
+
+// Event listener to trigger the modal when the page loads
+window.addEventListener("load", function () {
+  closeModal();
+  changeBodyStyle();
+});
+
+function changeBodyStyle() {
+  // Access the body element
+  var body = document.body;
+
+  // Edit the style properties dynamically
+  body.style.overflow = "visible";
+}
+
+// JavaScript to add a click event to the iframe
+document.getElementById("myIframe").addEventListener("click", function () {
+  // Get the iframe element
+  var iframe = document.getElementById("myIframe");
+
+  // Get the src attribute of the iframe
+  var src = iframe.src;
+
+  // Navigate to the src page
+  window.location.href = src;
+});

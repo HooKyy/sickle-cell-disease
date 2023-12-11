@@ -138,3 +138,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   changeText();
 });
+
+// Function to open the modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}
+
+// Event listener to trigger the modal when the page loads
+window.addEventListener("load", function () {
+  closeModal();
+  changeBodyStyle();
+});
+
+function changeBodyStyle() {
+  // Access the body element
+  var body = document.body;
+
+  // Edit the style properties dynamically
+  body.style.overflow = "visible";
+}
