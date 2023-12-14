@@ -158,13 +158,13 @@ window.addEventListener("load", function () {
 
   // Function to change body style
   changeBodyStyle();
-
-  // Set a timeout to call a function after 5 seconds
-  setTimeout(function () {
-    // Call your additional function here
-    yourAdditionalFunction();
-  }, 3000); // 5000 milliseconds = 5 seconds
 });
+
+// Set a timeout to call a function after 5 seconds
+setTimeout(function () {
+  // Call your additional function here
+  yourAdditionalFunction();
+}, 5000); // 5000 milliseconds = 5 seconds
 
 function yourAdditionalFunction() {
   // Your additional function code goes here
