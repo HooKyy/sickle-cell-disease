@@ -153,9 +153,24 @@ function closeModal() {
 
 // Event listener to trigger the modal when the page loads
 window.addEventListener("load", function () {
+  // Function to close modal
+  closeModal();
+
+  // Function to change body style
+  changeBodyStyle();
+
+  // Set a timeout to call a function after 5 seconds
+  setTimeout(function () {
+    // Call your additional function here
+    yourAdditionalFunction();
+  }, 3000); // 5000 milliseconds = 5 seconds
+});
+
+function yourAdditionalFunction() {
+  // Your additional function code goes here
   closeModal();
   changeBodyStyle();
-});
+}
 
 function changeBodyStyle() {
   // Access the body element
