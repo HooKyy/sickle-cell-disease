@@ -179,3 +179,28 @@ function changeBodyStyle() {
   // Edit the style properties dynamically
   body.style.overflow = "visible";
 }
+
+var xValues = ["2016 - 2013", "2010 - 2001", "2012 - 2011"];
+var yValues = [36, 21, 43];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797"
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Time Diagnosis"
+    }
+  }
+});
